@@ -1,0 +1,10 @@
+<ng-container *ngIf="todo">
+  <div>Scenario 1</div>
+  <div>{{ todo | json }}</div>
+</ng-container>
+<ng-container *ngIf="todos">
+  <div>Scenario 2</div>
+  <div *ngFor="let todo of todos">
+    {{ todo | json }}
+  </div>
+</ng-container>
